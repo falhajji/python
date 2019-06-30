@@ -14,13 +14,17 @@ if number1.isnumeric() and number2.isnumeric():
 	operation= input("Choose the operation (+, -, /, *): ")
 
 	if operation=="+":
-		print ((int(number1) + int(number2)))
+		answer = int(number1) + int(number2)
+		print ("The answer is %s" % answer)
 	elif operation=="-":
-		print ((int(number1) - int(number2)))
+		answer = int(number1) - int(number2)
+		print ("The answer is %s" % answer)
 	elif operation=="*":
-		print ((int(number1) * int(number2)))
+		answer = int(number1) * int(number2)
+		print ("The answer is %s" % answer)
 	elif operation=="/":
-		print ((int(number1) / int(number2)))
+		answer = int(number1) / int(number2)
+		print ("The answer is %s" % answer)
 	else:
 		print("The operation entered is not valid")
 
