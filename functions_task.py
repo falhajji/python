@@ -28,8 +28,8 @@ def calculate_age(year, month, day):
 #this will give us number of days since (our) last birthday
 
 	AgeMonth = int(AgeDays/30)
-
-
+	AgeDays = AgeDays%30
+#This line was missing in the last commit. Now updated thanks to Mshary.
 
 	print ("You are %d years, %d months, and %d days" % (AgeYear, AgeMonth, AgeDay))
 
