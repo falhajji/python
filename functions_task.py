@@ -18,7 +18,7 @@ def check_birthdate(year, month, day):
 def calculate_age(year, month, day):
 	today = datetime.now()
 	DOB = datetime(year, month, day)
-
+#   		^^^ this recollects the 'class' imported with the library in Line 1!
 	Age = today - DOB
 	AgeDays = Age.days
 #we do this step so that we get the 'days' 
