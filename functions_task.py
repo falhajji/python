@@ -32,6 +32,7 @@ def calculate_age(year, month, day):
 #This line was missing in the last commit. Now updated thanks to Mshary.
 
 	print ("You are %d years, %d months, and %d days" % (AgeYear, AgeMonth, AgeDay))
+# we use %s to subsitute with a string and %d to subsitute with a digit
 
 
 
@@ -39,7 +40,8 @@ year=int(input("Please enter year of birth: "))
 month=int(input("Please enter month of birth: "))
 day=int(input("Please enter day of birth: "))
 
-if check_birthdate(year, month, day) == True:
+if check_birthdate(year, month, day):
+# previously 						== True    <--- this part is not needed because you're asking if "True == True"; check_birthdate is either true or false (to beging with) so asking if it is == True is redundant
  	calculate_age(year, month, day)
 else:
 	print ("The birthdate entered is not valid. This is real life, not \'Back From The Future\'.")
