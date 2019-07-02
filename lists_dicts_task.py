@@ -4,14 +4,14 @@ skills = ["python", "html", "singing", "eating", "sleeping", "running"]
 
 cv={}
 
-name=input("What is your name? ")
-cv["name"]=name
+#name=input("What is your name? ")
+#cv["name"]=name
+# alternatively we can type the above two lines of code into one:
+cv["name"] = input("What is your name? ")
 
-age=input("How old are you? ")
-cv["age"]=age
+cv["age"]=input("How old are you? ")
 
-experience=input("How many years of experience do you have? ")
-cv["experience"]=experience
+cv["experience"]=input("How many years of experience do you have? ")
 
 cv["skills"]=[]
 
